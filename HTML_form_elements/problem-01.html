@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Application Form</title>
+</head>
+<body>
+
+<header>
+  <h1>&#127891; College Admission Application Form</h1>
+  <p>Welcome to our online admission portal. Please fill out the form carefully. Fields marked with * are mandatory.</p>
+  <img src="college.jpg" alt="College Campus" width="400">
+  <p>For more details, visit our <a href="admissions.html">&#128279; Admissions Page</a>.</p>
+</header>
+
+<main>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name*: </label>
+      <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50"><br><br>
+
+      <label for="dob">Date of Birth*: </label>
+      <input type="date" id="dob" name="dob" required min="1990-01-01" max="2010-12-31"><br><br>
+
+      <label for="email">Email*: </label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobile">Mobile Number*: </label>
+      <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}"><br><br>
+
+      <label for="pin">Password / Application PIN*: </label>
+      <input type="password" id="pin" name="pin" required minlength="6" maxlength="12"><br><br>
+
+      <label>Gender*: </label>
+      <input type="radio" id="male" name="gender" value="Male" required> Male
+      <input type="radio" id="female" name="gender" value="Female"> Female
+      <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+      <label for="category">Category*: </label>
+      <select id="category" name="category" required>
+        <option value="General">General</option>
+        <option value="OBC">OBC</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="EWS">EWS</option>
+      </select><br><br>
+
+      <label for="address">Permanent Address*: </label><br>
+      <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Selection</legend>
+      <label for="course">Program*: </label>
+      <select id="course" name="course" required>
+        <option>B.Tech Computer Science</option>
+        <option>BBA</option>
+        <option>B.Sc Physics</option>
+        <option>MBA</option>
+        <option>M.Tech AI</option>
+        <option>PhD</option>
+      </select><br><br>
+
+      <label>Preferred Mode*: </label>
+      <input type="radio" name="mode" value="Regular" required> Regular
+      <input type="radio" name="mode" value="Distance"> Distance<br><br>
+
+      <label>Facilities (Multiple Choice): </label>
+      <input type="checkbox" name="facility" value="Hostel"> Hostel
+      <input type="checkbox" name="facility" value="Transport"> Transport
+      <input type="checkbox" name="facility" value="Library"> Library<br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic Background</legend>
+      <label for="qualification">Previous Qualification*: </label>
+      <input type="text" id="qualification" name="qualification" required><br><br>
+
+      <label for="percentage">Percentage / CGPA*: </label>
+      <input type="number" id="percentage" name="percentage" step="0.01" min="0" max="100" required><br><br>
+
+      <label for="year">Passing Year*: </label>
+      <input type="number" id="year" name="year" min="2000" max="2026" required><br><br>
+
+      <label for="school">School / College Name*: </label>
+      <input type="text" id="school" name="school" required><br><br>
+
+      <label for="document">Upload Admission Document: </label>
+      <input type="file" id="document" name="document"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Declaration</legend>
+      <label><input type="checkbox" name="consent" required> I hereby declare that the information provided is true &amp; correct to the best of my knowledge.</label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 College Admission Portal | &#128231; Contact Us</p>
+</footer>
+
+</body>
+</html>

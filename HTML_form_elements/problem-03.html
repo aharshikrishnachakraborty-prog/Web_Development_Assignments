@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Course Enrollment & Student Registration</title>
+</head>
+<body>
+
+<header>
+  <h1>&#127891; Online Course Enrollment</h1>
+  <p>Welcome to our education platform. Please complete the registration form below to enroll in your desired technical course.</p>
+  <img src="course-banner.jpg" alt="Course Banner" width="400">
+  <p>For more details, visit our <a href="courses.html">&#128279; Course Information Page</a>.</p>
+</header>
+
+<main>
+  <form>
+    <fieldset>
+      <legend>Account Information</legend>
+      <label for="name">Full Name*: </label>
+      <input type="text" id="name" name="studentName" required minlength="3" maxlength="50"><br><br>
+
+      <label for="email">Email*: </label>
+      <input type="email" id="email" name="studentEmail" required><br><br>
+
+      <label for="password">Password*: </label>
+      <input type="password" id="password" name="studentPassword" required minlength="6" maxlength="12"><br><br>
+
+      <label for="mobile">Mobile Number*: </label>
+      <input type="tel" id="mobile" name="studentMobile" required pattern="[0-9]{10}"><br><br>
+
+      <label for="dob">Date of Birth*: </label>
+      <input type="date" id="dob" name="studentDOB" required min="1990-01-01" max="2010-12-31"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Preferences</legend>
+      <label for="course">Select Course*: </label>
+      <select id="course" name="course" required>
+        <option>Java Programming</option>
+        <option>Python Programming</option>
+        <option>Web Development</option>
+        <option>Data Structures</option>
+        <option>Database Management</option>
+        <option>Cloud Computing</option>
+      </select><br><br>
+
+      <label for="batch">Batch / Session*: </label>
+      <select id="batch" name="batch" required>
+        <option>Morning Batch</option>
+        <option>Afternoon Batch</option>
+        <option>Evening Batch</option>
+        <option>Weekend Batch</option>
+      </select><br><br>
+
+      <label>Learning Mode*: </label>
+      <input type="radio" name="mode" value="Online" required> Online
+      <input type="radio" name="mode" value="Offline"> Offline
+      <input type="radio" name="mode" value="Hybrid"> Hybrid<br><br>
+
+      <label>Areas of Interest: </label>
+      <input type="checkbox" name="interest" value="Java"> Java
+      <input type="checkbox" name="interest" value="Python"> Python
+      <input type="checkbox" name="interest" value="Web Development"> Web Development
+      <input type="checkbox" name="interest" value="Data Structures"> Data Structures
+      <input type="checkbox" name="interest" value="Database"> Database<br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic Background</legend>
+      <label for="education">Education Level*: </label>
+      <input type="text" id="education" name="educationLevel" required><br><br>
+
+      <label for="college">College / Institution*: </label>
+      <input type="text" id="college" name="collegeName" required><br><br>
+
+      <label for="semester">Current Semester / Year*: </label>
+      <input type="text" id="semester" name="semester" required><br><br>
+
+      <label for="experience">Programming Experience (years): </label>
+      <input type="number" id="experience" name="experience" min="0" max="20" step="1"><br><br>
+
+      <label for="portfolio">GitHub / Portfolio URL: </label>
+      <input type="url" id="portfolio" name="portfolio"><br><br>
+
+      <label for="goals">Learning Goals: </label><br>
+      <textarea id="goals" name="goals" rows="4" cols="40" placeholder="Describe your learning objectives..."></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Confirmation</legend>
+      <label><input type="checkbox" name="consent" required> I confirm that the information provided is true &amp; I agree to the enrollment terms.</label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 Online Education Platform | &#128231; Contact Us</p>
+</footer>
+
+</body>
+</html>
