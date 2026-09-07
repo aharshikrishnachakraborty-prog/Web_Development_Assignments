@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant & Food Delivery Portal</title>
+</head>
+<body>
+
+<header>
+  <h1>&#127860; Welcome to Gourmet Delights</h1>
+  <nav>
+    <ul>
+      <li><a href="#story">&#127968; Our Story</a></li>
+      <li><a href="#menu">&#127869; Menu</a></li>
+      <li><a href="#chef">&#128104; Chef Profile</a></li>
+      <li><a href="#order">&#9989; Order / Enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="story">
+    <h2>Restaurant Story</h2>
+    <p>Founded in 1990, Gourmet Delights has been serving authentic cuisines with love &amp; passion. Our motto: <em>"Quality &amp; Taste Above All"</em>.</p>
+    <p><strong>Special Offers:</strong> Get 20&#37; off on your first online order &mdash; limited time only!</p>
+  </section>
+
+  <section id="chef">
+    <h2>&#128104; Chef Profile</h2>
+    <article>
+      <h3>Chef Antonio Rossi</h3>
+      <p>With 25 years of culinary experience, Chef Antonio brings flavors from Italy &amp; beyond.</p>
+    </article>
+    <aside>
+      <h3>Chef’s Message</h3>
+      <p><em>"Cooking is not just food, it’s art &copy; and love."</em></p>
+    </aside>
+    <video controls width="400">
+      <source src="chef-kitchen.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <audio controls>
+      <source src="chef-message.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+    <iframe src="https://maps.google.com" width="400" height="250" title="Restaurant Location"></iframe>
+  </section>
+
+  <section id="menu">
+    <h2>&#127869; Menu</h2>
+    <ul>
+      <li>&#127829; Pizzas</li>
+      <li>&#127835; Pastas</li>
+      <li>&#127828; Burgers</li>
+      <li>&#127857; Desserts</li>
+      <li>&#127865; Beverages</li>
+    </ul>
+
+    <h3>Ordering Steps</h3>
+    <ol>
+      <li>Select Item</li>
+      <li>Choose Quantity</li>
+      <li>Add Address</li>
+      <li>Confirm Order</li>
+      <li>Make Payment</li>
+    </ol>
+
+    <dl>
+      <dt>Dine-in</dt><dd>Reserve your table online</dd>
+      <dt>Takeaway</dt><dd>Pick up your order at counter</dd>
+      <dt>Delivery</dt><dd>Get food delivered to your doorstep</dd>
+      <dt>Reservation</dt><dd>Book for special occasions</dd>
+    </dl>
+
+    <table border="1">
+      <caption>&#127860; Menu Items</caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th>Type</th>
+          <th>Price (&dollar;)</th>
+          <th>Availability</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Margherita Pizza</td><td>Pizza</td><td>Veg</td><td>8</td><td>Available</td><td>Classic cheese &amp; tomato</td></tr>
+        <tr><td>Pepperoni Pizza</td><td>Pizza</td><td>Non-Veg</td><td>10</td><td>Available</td><td>Loaded with pepperoni</td></tr>
+        <tr><td>Spaghetti Carbonara</td><td>Pasta</td><td>Non-Veg</td><td>12</td><td>Available</td><td>Creamy sauce with bacon</td></tr>
+        <tr><td>Veggie Burger</td><td>Burger</td><td>Veg</td><td>7</td><td>Available</td><td>Fresh veggies &amp; patty</td></tr>
+        <tr><td>Cheeseburger</td><td>Burger</td><td>Non-Veg</td><td>9</td><td>Available</td><td>Beef patty with cheese</td></tr>
+        <tr><td>Tiramisu</td><td>Dessert</td><td>Veg</td><td>6</td><td>Available</td><td>Italian coffee-flavored dessert</td></tr>
+        <tr><td>Chocolate Cake</td><td>Dessert</td><td>Veg</td><td>5</td><td>Available</td><td>Rich chocolate layers</td></tr>
+        <tr><td>Lemonade</td><td>Beverage</td><td>Veg</td><td>3</td><td>Available</td><td>Refreshing drink</td></tr>
+        <tr><td>Espresso</td><td>Beverage</td><td>Veg</td><td>4</td><td>Available</td><td>Strong Italian coffee</td></tr>
+        <tr><td>Grilled Salmon</td><td>Main Course</td><td>Non-Veg</td><td>15</td><td>Available</td><td>Served with herbs &amp; lemon</td></tr>
+      </tbody>
+    </table>
+
+    <figure>
+      <img src="pizza.jpg" alt="Delicious Pizza" width="300">
+      <figcaption>&#127829; Our Signature Pizza</figcaption>
+    </figure>
+  </section>
+
+  <section id="order">
+    <h2>&#9989; Enquiry / Order Form</h2>
+    <form>
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Phone: <input type="tel" name="phone" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Order Type:
+        <select name="orderType">
+          <option>Dine-in</option>
+          <option>Takeaway</option>
+          <option>Delivery</option>
+          <option>Reservation</option>
+        </select>
+      </label><br>
+      <label>Date: <input type="date" name="date"></label><br>
+      <label>Time: <input type="time" name="time"></label><br>
+      <label>Item/Category: <input type="text" name="item"></label><br>
+      <label>Quantity: <input type="number" name="quantity" min="1"></label><br>
+      <label>Address:<br>
+        <textarea name="address" rows="4" cols="40"></textarea>
+      </label><br>
+      <label>Special Instructions:<br>
+        <textarea name="instructions" rows="3" cols="40"></textarea>
+      </label><br>
+      <label><input type="checkbox" name="consent" required> I agree to terms &amp; conditions</label><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Gourmet Delights | <a href="contact.html">&#128231; Contact Us</a></p>
+</footer>
+
+</body>
+</html>
