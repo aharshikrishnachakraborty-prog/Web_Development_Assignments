@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Clinic Information & Appointment Portal</title>
+</head>
+<body>
+
+<header>
+  <h1>&#128137; Multi-Specialty Healthcare Clinic</h1>
+  <nav>
+    <ul>
+      <li><a href="#intro">&#127968; Introduction</a></li>
+      <li><a href="#services">&#128221; Services</a></li>
+      <li><a href="#schedule">&#128197; Doctor Schedule</a></li>
+      <li><a href="#appointment">&#9989; Appointment Request</a></li>
+      <li><a href="#contact">&#128231; Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="intro">
+    <h2>Clinic Introduction</h2>
+    <p><strong>HealthyLife Clinic</strong> offers comprehensive care across multiple specialties. Our mission is to provide compassionate &amp; quality healthcare.</p>
+    <p><em>Disclaimer:</em> This page is informational only &mdash; not a substitute for medical advice.</p>
+    <figure>
+      <img src="clinic.jpg" alt="Clinic Building" width="400">
+      <figcaption>&#127968; Our Clinic Facility</figcaption>
+    </figure>
+    <figure>
+      <a href="departments.html"><img src="lab.jpg" alt="Diagnostic Lab" width="400"></a>
+      <figcaption>&#128300; Modern Diagnostic Lab</figcaption>
+    </figure>
+    <blockquote>
+      "The doctors here truly care about patients &mdash; I felt supported throughout my treatment."  
+      <br>&mdash; Patient Testimonial
+    </blockquote>
+  </section>
+
+  <section id="services">
+    <h2>&#128221; Services</h2>
+    <ul>
+      <li>General Medicine</li>
+      <li>Pediatrics</li>
+      <li>Orthopedics</li>
+      <li>Dermatology</li>
+      <li>Cardiology</li>
+    </ul>
+
+    <h3>Appointment Steps</h3>
+    <ol>
+      <li>Choose Department</li>
+      <li>Select Doctor</li>
+      <li>Pick Date &amp; Time</li>
+      <li>Provide Patient Details</li>
+      <li>Confirm Appointment</li>
+    </ol>
+
+    <h3>Consultation Types</h3>
+    <dl>
+      <dt>Consultation</dt><dd>Initial doctor visit</dd>
+      <dt>Follow-up</dt><dd>Subsequent visit for ongoing care</dd>
+      <dt>OPD</dt><dd>Outpatient Department services</dd>
+      <dt>Appointment</dt><dd>Scheduled visit with specialist</dd>
+    </dl>
+  </section>
+
+  <section id="schedule">
+    <h2>&#128197; Doctor & Service Schedule</h2>
+    <table border="1">
+      <caption>Weekly Doctor Schedule</caption>
+      <thead>
+        <tr>
+          <th>Specialist</th>
+          <th>Department</th>
+          <th>Days</th>
+          <th>Time</th>
+          <th>Consultation Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dr. Sharma</td><td>Cardiology</td><td>Mon, Wed, Fri</td><td>10 AM - 1 PM</td><td>Consultation</td></tr>
+        <tr><td>Dr. Mehta</td><td>Orthopedics</td><td>Tue, Thu</td><td>2 PM - 5 PM</td><td>OPD</td></tr>
+        <tr><td>Dr. Khan</td><td>Pediatrics</td><td>Mon - Sat</td><td>9 AM - 12 PM</td><td>Consultation</td></tr>
+        <tr><td>Dr. Patel</td><td>Dermatology</td><td>Wed, Fri</td><td>3 PM - 6 PM</td><td>Follow-up</td></tr>
+        <tr><td>Dr. Singh</td><td>General Medicine</td><td>Mon - Sat</td><td>11 AM - 2 PM</td><td>Consultation</td></tr>
+        <tr><td>Dr. Rao</td><td>Neurology</td><td>Tue, Thu</td><td>4 PM - 7 PM</td><td>Appointment</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="appointment">
+    <h2>&#9989; Appointment Request Form</h2>
+    <form>
+      <label for="name">Patient Name*: </label>
+      <input type="text" id="name" name="patientName" required><br><br>
+
+      <label for="email">Email*: </label>
+      <input type="email" id="email" name="patientEmail" required><br><br>
+
+      <label for="mobile">Mobile*: </label>
+      <input type="tel" id="mobile" name="patientMobile" required pattern="[0-9]{10}"><br><br>
+
+      <label for="date">Preferred Date*: </label>
+      <input type="date" id="date" name="appointmentDate" required><br><br>
+
+      <label for="time">Preferred Time*: </label>
+      <input type="time" id="time" name="appointmentTime" required><br><br>
+
+      <label for="department">Department*: </label>
+      <select id="department" name="department" required>
+        <option>General Medicine</option>
+        <option>Pediatrics</option>
+        <option>Orthopedics</option>
+        <option>Dermatology</option>
+        <option>Cardiology</option>
+        <option>Neurology</option>
+      </select><br><br>
+
+      <label for="doctor">Doctor*: </label>
+      <select id="doctor" name="doctor" required>
+        <option>Dr. Sharma</option>
+        <option>Dr. Mehta</option>
+        <option>Dr. Khan</option>
+        <option>Dr. Patel</option>
+        <option>Dr. Singh</option>
+        <option>Dr. Rao</option>
+      </select><br><br>
+
+      <label>Consultation Type*: </label>
+      <input type="radio" name="consultation" value="Consultation" required> Consultation
+      <input type="radio" name="consultation" value="Follow-up"> Follow-up
+      <input type="radio" name="consultation" value="OPD"> OPD
+      <input type="radio" name="consultation" value="Appointment"> Appointment<br><br>
+
+      <label for="age">Age*: </label>
+      <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+      <label for="reason">Reason / Symptoms*: </label><br>
+      <textarea id="reason" name="reason" rows="4" cols="40" required></textarea><br><br>
+
+      <label><input type="checkbox" name="consent" required> I agree to terms &amp; conditions</label><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+</main>
+
+<footer id="contact">
+  <p>&copy; 2026 HealthyLife Clinic | &#128231; Contact Us | <a href="resources.html">&#128279; Patient Resources</a></p>
+</footer>
+
+</body>
+</html>

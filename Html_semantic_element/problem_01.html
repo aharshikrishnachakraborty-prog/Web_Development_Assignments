@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Admissions & Student Portal</title>
+</head>
+<body>
+
+<header>
+  <h1>&#127891; Welcome to Global University</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">&#127968; Home</a></li>
+      <li><a href="#programs">&#128218; Programs</a></li>
+      <li><a href="#admissions">&#128221; Admissions</a></li>
+      <li><a href="#scholarships">&#128176; Scholarships</a></li>
+      <li><a href="#contact">&#128231; Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h2>University Introduction</h2>
+    <p><strong>Global University</strong> is committed to excellence in education &amp; research. Established in 1950, we have nurtured generations of leaders.</p>
+    <figure>
+      <img src="campus.jpg" alt="University Campus" width="400">
+      <figcaption>&#127968; Our Beautiful Campus</figcaption>
+    </figure>
+    <figure>
+      <a href="programs.html"><img src="library.jpg" alt="Library" width="400"></a>
+      <figcaption>&#128218; State-of-the-Art Library</figcaption>
+    </figure>
+    <blockquote>
+      "Studying here gave me the confidence to achieve my dreams &mdash; the faculty and peers shaped my journey."  
+      <br>&mdash; Alumni, Class of 2020
+    </blockquote>
+  </section>
+
+  <section id="programs">
+    <h2>&#128218; Programs Offered</h2>
+    <p>Explore diverse programs designed to foster innovation &amp; knowledge.</p>
+    <table border="1">
+      <caption>&#127891; Admission Programs</caption>
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Duration</th>
+          <th>Eligibility</th>
+          <th>Mode</th>
+          <th>Intake</th>
+          <th>Fee (&dollar;)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>B.Tech CSE</td><td>4 Years</td><td>12th PCM</td><td>Regular</td><td>120</td><td>1500</td></tr>
+        <tr><td>BBA</td><td>3 Years</td><td>12th Any Stream</td><td>Regular</td><td>80</td><td>1200</td></tr>
+        <tr><td>B.Sc Physics</td><td>3 Years</td><td>12th Science</td><td>Regular</td><td>60</td><td>1000</td></tr>
+        <tr><td>MBA</td><td>2 Years</td><td>Graduation</td><td>Regular</td><td>50</td><td>2000</td></tr>
+        <tr><td>M.Tech AI</td><td>2 Years</td><td>B.Tech</td><td>Regular</td><td>40</td><td>2200</td></tr>
+        <tr><td>PhD</td><td>3-5 Years</td><td>Postgrad</td><td>Research</td><td>20</td><td>2500</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="admissions">
+    <h2>&#128221; Admissions</h2>
+    <article>
+      <h3>Admission Announcement</h3>
+      <p><mark>Applications for the upcoming academic year are now open!</mark> Hurry before the deadline.</p>
+    </article>
+    <aside>
+      <h3>Application Help</h3>
+      <p><em>Tip:</em> Keep scanned copies of your mark sheets &amp; ID proof ready before applying.</p>
+    </aside>
+
+    <h3>Facilities</h3>
+    <ul>
+      <li>&#127947; Sports Complex</li>
+      <li>&#127859; Cafeteria</li>
+      <li>&#128218; Library</li>
+      <li>&#128187; Computer Labs</li>
+      <li>&#127970; Hostels</li>
+    </ul>
+
+    <h3>Application Steps</h3>
+    <ol>
+      <li>Register Online</li>
+      <li>Fill Application Form</li>
+      <li>Upload Documents</li>
+      <li>Pay Application Fee</li>
+      <li>Appear for Entrance Exam</li>
+      <li>Check Merit List</li>
+    </ol>
+
+    <h3>Admission Terms</h3>
+    <dl>
+      <dt>Eligibility</dt><dd>12th Pass with minimum 50&#37;</dd>
+      <dt>Merit List</dt><dd>Published online after exam</dd>
+      <dt>Scholarship</dt><dd>Available for meritorious students</dd>
+      <dt>Application Fee</dt><dd>&#8377; 500</dd>
+    </dl>
+  </section>
+
+  <section id="apply">
+    <h2>&#9989; Apply Now</h2>
+    <form>
+      <label for="name">Name*: </label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email*: </label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobile">Mobile*: </label>
+      <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}"><br><br>
+
+      <label for="dob">Date of Birth*: </label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="program">Program*: </label>
+      <select id="program" name="program" required>
+        <option>B.Tech CSE</option>
+        <option>BBA</option>
+        <option>B.Sc Physics</option>
+        <option>MBA</option>
+        <option>M.Tech AI</option>
+        <option>PhD</option>
+      </select><br><br>
+
+      <label>Study Mode*: </label>
+      <input type="radio" name="mode" value="Regular" required> Regular
+      <input type="radio" name="mode" value="Distance"> Distance<br><br>
+
+      <label for="address">Address*: </label><br>
+      <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+
+      <label><input type="checkbox" name="consent" required> I declare that the information provided is true &amp; correct.</label><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+</main>
+
+<footer id="contact">
+  <p>&copy; 2026 Global University | &#128231; Contact Us | <a href="legal.html">&#169; Legal Information</a></p>
+</footer>
+
+</body>
+</html>
