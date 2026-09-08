@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement & Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, section, footer {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Page mark, Department / Location Details with Department/Company Name -->
+    <header>
+        <h1>Department of Computer Science & Engineering</h1>
+        <p>Tech Innovation Campus, Building A, Suite 404</p>
+        
+        <!-- 2. Nav links for Home, About, Team/Profile, News/Updates, Projects, Contact/Feedback (using internal links) -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#team">Team Profile</a>
+            <a href="#news">News & Updates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact/Feedback</a>
+        </nav>
+    </header>
+
+    <!-- 3. Unique sections with General Content and High Quality Content with Dynamic/Static Layout -->
+    <!-- 4. Modern structure through semantic tags -->
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Department</h2>
+            <p>We are dedicated to fostering innovation, technical expertise, and academic excellence in software engineering and system architecture.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our department combines cutting-edge research facilities with industry-aligned curriculum standards to prepare students for modern technology challenges.</p>
+        </section>
+
+        <section id="team">
+            <h2>Team Profile</h2>
+            <p>Meet our leading researchers and faculty members who drive excellence daily.</p>
+            <!-- 5. List items containing list values for general context with accurate alignment and margins -->
+            <ul>
+                <li><strong>Dr. Jane Doe</strong> - Head of Artificial Intelligence Research</li>
+                <li><strong>Prof. John Smith</strong> - Lead Distributed Systems Architect</li>
+                <li><strong>Dr. Alice Johnson</strong> - Cyber Security Specialist</li>
+            </ul>
+        </section>
+
+        <section id="news">
+            <h2>News & Updates</h2>
+            <!-- 6. Full table configuration and proper structure -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event / Update Announcement</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>October 12, 2026</td>
+                        <td>Annual Tech Symposium Registration Opens</td>
+                        <td>Events</td>
+                    </tr>
+                    <tr>
+                        <td>November 05, 2026</td>
+                        <td>New Quantum Computing Lab Inauguration</td>
+                        <td>Facilities</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- 7. Dynamic layout context matching structural design features and criteria -->
+            <p>Explore some of our structural architecture initiatives:</p>
+            <!-- 8. Order list structure -->
+            <ol>
+                <li>Next-Generation Smart Grid Simulation Framework</li>
+                <li>Decentralized Ledger Protocol for Health Informatics</li>
+                <li>Autonomous Drone Navigation via Edge Computing</li>
+            </ol>
+            
+            <!-- 9. Create static sections for general web contexts featuring technical updates and product details -->
+            <article>
+                <h3>Technical Update: Core System Patch v4.2</h3>
+                <p>This update details changes implemented across our campus server infrastructure, resolving static IP conflicts and optimizing query speeds.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Feedback</h2>
+            <!-- 10. Forms container elements containing Text inputs, Budget Range, Tech Skills checklist -->
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- Form Budget Range element implementation -->
+                    <label for="budget">Project Budget Range:</label>
+                    <select id="budget" name="budget">
+                        <option value="low">$1,000 - $5,000</option>
+                        <option value="medium">$5,000 - $20,000</option>
+                        <option value="high">$20,000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <!-- Form Checklist element implementation -->
+                    <label>Required Tech Skills:</label>
+                    <input type="checkbox" id="skill1" name="skills" value="html"> <label style="display:inline;" for="skill1">HTML/CSS</label><br>
+                    <input type="checkbox" id="skill2" name="skills" value="js"> <label style="display:inline;" for="skill2">JavaScript</label><br>
+                    <input type="checkbox" id="skill3" name="skills" value="python"> <label style="display:inline;" for="skill3">Python</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Message/Feedback:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Share your suggestions..."></textarea>
+                </div>
+
+                <!-- 11. Custom tags for standard fields inside input components layout context -->
+                <div class="form-group">
+                    <input type="submit" value="Submit Information">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- 12. Accurate closing layouts layout specifications -->
+    <!-- 13. Relevant text indicators through structural designs context references -->
+    <footer>
+        <p>&copy; 2026 Department of Computer Science & Engineering. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
